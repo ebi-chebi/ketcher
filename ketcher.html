@@ -64,34 +64,23 @@
             <table id="ketcher_window">
                 <tr align="center" id="main_toolbar">
                     <td style="width:36px"><div style="position:relative"><img class="sideButton modeButton stateButton" id="selector" selid="selector_lasso" src="icons/png/selection/lasso.sidebar.png" alt="" title="Lasso Selection Tool (Esc)" /><img class="dropdownButton" id="selector_dropdown" src="icons/png/main/dropdown.png" alt="" /></div></td>
-                    <td class="toolDelimiter"></td>
-                    <!--td style="width:36px"><object type="image/svg+xml" width="28" height="28" data="svg/document-new28x28.svg"></object></td-->
                     <td class="toolButtonCell toolButton" id="new"><img src="icons/png/main/document-new.png" alt="" title="Clear Canvas (Ctrl+N)" /></td>
                     <td class="toolButtonCell toolButton" id="open"><img src="icons/png/main/document-open.png" alt="" title="Open... (Ctrl+O)" /></td>
                     <td class="toolButtonCell toolButton" id="save"><img src="icons/png/main/document-save-as.png" alt="" title="Save As... (Ctrl+S)" /></td>
-                    <td class="toolDelimiter"></td>
                     <td class="toolButtonCell toolButton buttonDisabled" id="undo"><img src="icons/png/main/edit-undo.png" alt="" title="Undo (Ctrl+Z)" /></td>
                     <td class="toolButtonCell toolButton buttonDisabled" id="redo"><img src="icons/png/main/edit-redo.png" alt="" title="Redo (Ctrl+Y)" /></td>
                     <td class="toolButtonCell toolButton buttonDisabled" id="cut"><img src="icons/png/main/edit-cut.png" alt="" title="Cut (Ctrl+X)" /></td>
                     <td class="toolButtonCell toolButton buttonDisabled" id="copy"><img src="icons/png/main/edit-copy.png" alt="" title="Copy (Ctrl+C)" /></td>
                     <td class="toolButtonCell toolButton buttonDisabled" id="paste"><img src="icons/png/main/edit-paste.png" alt="" title="Paste (Ctrl+V)" /></td>
-                    <td class="toolDelimiter"></td>
                     <td class="toolButtonCell toolButton" id="zoom_in"><img src="icons/png/main/view-zoom-in.png" alt="" title="Zoom In (+)" /></td>
                     <td class="toolButtonCell toolButton" id="zoom_out"><img src="icons/png/main/view-zoom-out.png" alt="" title="Zoom Out (-)" /></td>
                     <td id="zoom_list_cell" style="width:95px"><select id="zoom_list"></select></td>
-                    <td class="toolDelimiter"></td>
                     <td class="toolButtonCell toolButton serverRequired" id="clean_up"><img title="Clean Up (Ctrl+L)" alt="" src="icons/png/main/layout.png" /></td>
-                    <td class="toolButtonCell toolButton serverRequired" id="aromatize"><img title="Aromatize" alt="" src="icons/png/main/arom.png" /></td>
-                    <td class="toolButtonCell toolButton serverRequired" id="dearomatize"><img title="Dearomatize" alt="" src="icons/png/main/dearom.png" /></td>
-                    <td style="width:100%"></td>
-                    <td id="toolText" style="width:32px"></td>
-                    <td class="toolDelimiter"></td>
-                    <td style="width:1px" rowspan="15"></td>
                     <td style="width:36px;padding:0 2px 0 0;"><a href="#" onclick="ui.showDialog('about_dialog')"><img src="icons/png/main/logo.png" alt="" title="GGA Software Services" /></a></td>
                 </tr>
                 <tr align="center" class="sideButtonCell">
                     <td><img class="sideButton modeButton" id="select_erase" src="icons/png/main/edit-clear.png" alt="" title="Erase" /></td>
-                    <td colspan="21" rowspan="14"><div id="client_area"></div></td>
+                    <td colspan="12" rowspan="16"><div id="client_area"></div></td>
                     <td><div class="sideButton modeButton" id="atom_h" title="H Atom (H)"></div></td>
                 </tr>
                 <tr align="center" class="sideButtonCell">
@@ -153,17 +142,12 @@
                     <td><div style="position:relative"><img class="sideButton modeButton stateButton" id="transform" selid="transform_rotate" src="icons/png/transform/transform-rotate.sidebar.png" alt="" title="Rotate Tool" /><img class="dropdownButton" id="transform_dropdown" src="icons/png/main/dropdown.png" alt="" /></div></td>
                     <td><div class="sideButton modeButton" id="atom_i" title="I Atom (I)"></div></td>
                 </tr>
-                <tr align="center" class="sideButtonCell serverRequired">
-                    <td>
-                        <div style="position:relative">
-                            <img class="sideButton modeButton stateButton" id="customtemplate" selid="customtemplate_0" src="icons/png/customtemplate/customtemplate0.sidebar.png" alt="" title="" />
-                            <img class="dropdownButton" id="customtemplate_dropdown" src="icons/png/main/dropdown.png" alt="" />
-                        </div>
-                    </td>
+                <tr align="center" class="sideButtonCell">
+                    <td class="sideButton modeButton serverRequired" id="aromatize"><img title="Aromatize" alt="" src="icons/png/main/arom.png"/></td>
                     <td><div class="sideButton modeButton" id="atom_table" title="Periodic table"></div></td>
                 </tr>
                 <tr align="center" class="sideButtonCell">
-                    <td></td>
+                    <td class="sideButton modeButton serverRequired" id="dearomatize"><img title="Dearomatize" alt="" src="icons/png/main/dearom.png" /></td>
                     <td><div class="sideButton modeButton" id="atom_reagenerics" title="Reaxys Generics"></div></td>
                 </tr>
                 <tr align="center">

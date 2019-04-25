@@ -1960,8 +1960,8 @@ ui.showElemTable = function(params)
                 'fillColor':'#DADADA',
                 'fillColorSelected':'#FFFFFF',
                 'frameColor':'#E8E8E8',
-                'fontSize':23,
-                'buttonHalfSize':18
+                'fontSize':16,
+                'buttonHalfSize':14
             }, true);
             ui.elem_table_area = ui.elem_table_obj.renderTable();
             $('elem_table_single').checked = true;

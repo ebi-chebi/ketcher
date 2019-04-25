@@ -10,10 +10,16 @@ body > div:first-child
     height: 100%;
 }
 
-.ketcherDivMaxSize
+/*.ketcherDivMaxSize{*/
+    /*max-width: 900px;*/
+    /*max-height: 500px;  */
+/*}*/
+
+
+#ketcher_div
 {
-   max-width: 900px;
-   max-height: 500px;
+    width: 630px;
+    height: 515px;
 }
 
 a, img
@@ -292,6 +298,7 @@ div#loading
     border-width: thin;
     padding: 4px;
     text-align: center;
+    overflow:visible;
     left:  10%;
     top:   10%;
 }
@@ -309,6 +316,10 @@ div#loading
 {
     left:  5%;
     top:   5%;
+}
+
+.reagenericsTableDialog{
+    left: 5px;
 }
 
 .chemicalText
@@ -345,7 +356,7 @@ div#loading
     border-width: normal;
     padding: 4px;
     text-align: center;
-    left:  300px;
+    left:  100px;
     top:   100px;
 }
 

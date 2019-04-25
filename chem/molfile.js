@@ -1189,7 +1189,7 @@ chem.MolfileSaver.prototype.writeCTab2000 = function (rgroups)
 		if (atom.atomList != null) {
 			label = 'L';
 			atomList_list.push(id);
-		} else if (chem.Element.getElementByLabel(label) == null && ['A', 'Q', 'X', '*', 'R#'].indexOf(label) == -1) {
+        } else if (chem.Element.getElementByLabel(label) == null && ['A', 'Q', 'X', '*', 'R#', 'R', 'R1', 'R2', 'R3', 'R4', 'R5'].indexOf(label) == -1) {
             label = 'C';
             atomLabel_list.push(id);
         }
